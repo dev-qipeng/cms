@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>后台管理</title>
+<link rel="stylesheet" type="text/css" href="../theme/1/css/common.css">
+<link rel="stylesheet" type="text/css" href="../theme/1/css/style.css">
+<link rel="stylesheet" type="text/css" href="../theme/1/css/table.css">
+<link rel="stylesheet" type="text/css" href="../theme/1/css/icon.css">
+<link rel="stylesheet" type="text/css" href="../theme/1/jquery-easyui-themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="../theme/1/css/easyui-tabs.css">
+<link rel="stylesheet" type="text/css" href="../theme/1/css/EditingArea.css">
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="../theme/1/js/base.js"></script>
+<script type="text/javascript" src="../js/jquery.form.js"></script>
+
+
+<style type="text/css">
+.active span{
+	color:red;
+}
+.divtable {
+	padding-bottom: 30px;
+}
+</style>
+</head>
+
+<body>
+	<div class="main">
+		<div id="top">
+			<div class="top">
+				<div class="t_logo"></div>
+				<div class="t_sign">
+					<span>你好，管理员</span><a href="#" class="t_exit">退出</a>
+				</div>
+			</div>
+		</div>
+		<div id="cont">
+			<div class="centent">
+				<div class="left">
+					<ul class="baseUI">
+						<li><a href="#"><em class="base_basicset"></em><span>信息管理</span></a></li>
+						<li><a href="#"><em class="base_roll"></em><span>信息发布</span></a></li>
+						<li><a href="#"><em class="base_userset"></em><span>栏目管理</span></a></li>
+						<li><a href="#"><em class="base_auth"></em><span>添加栏目</span></a></li>
+						<li><a href="#"><em class="base_sys"></em><span>系统设置</span></a></li>
+					</ul>
+				</div>
+				<div class="right" style="height: 530px; overflow: auto;">
+					<!-- 内容加载区 -->
+					<div class="rightContent" style="padding: 10px;">
+						<div style="padding: 10px;0">
+							<div class="c_condition">
+								<span>
+									<select name="key">
+										<option value="-1">-请选择-</option>
+										<option value="title">标题</option>
+										<option value="author">作者</option>
+										<option value="category">栏目</option>
+									</select>
+								</span>
+								<span>关键字：<input type="text" name="value"></span> 
+								<button class="btn_gray">搜索</button>
+							</div>
+							<div class="divtable">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0"
+									class="tab1">
+									<tbody>
+										<tr>
+											<th class="tl pl5">标题</th>
+											<th class="tl pl5">所属栏目</th>
+											<th class="tl pl5">作者</th>
+											<th class="tl pl5">发布日期</th>
+											<th class="tl pl5">点击次数</th>
+											<th class="tl pl5">操作</th>
+										</tr>
+										<tr>
+											<td class="pl5">相对论</td>
+											<td class="pl5">物理</td>
+											<td class="pl5">张三</td>
+											<td class="pl5">16-06-22 10:20:22</td>
+											<td class="pl5">5</td>
+											<!-- 拓展 js -->
+											<td class="pl5">
+												<span class="ico_edit ml5" val="id_value"></span>
+												<span class="ico_del ml5" val="id_value"></span>
+											</td>
+										</tr>
+										<tr>
+											<td class="pl5">相对论</td>
+											<td class="pl5">物理</td>
+											<td class="pl5">张三</td>
+											<td class="pl5">16-06-22 10:20:22</td>
+											<td class="pl5">5</td>
+											<!-- 拓展 js -->
+											<td class="pl5">
+												<span class="ico_edit ml5" val="id_value"></span>
+												<span class="ico_del ml5" val="id_value"></span>
+											</td>
+										</tr>
+										<tr>
+											<td class="pl5">相对论</td>
+											<td class="pl5">物理</td>
+											<td class="pl5">张三</td>
+											<td class="pl5">16-06-22 10:20:22</td>
+											<td class="pl5">5</td>
+											<!-- 拓展 js -->
+											<td class="pl5">
+												<span class="ico_edit ml5" val="id_value"></span>
+												<span class="ico_del ml5" val="id_value"></span>
+											</td>
+										</tr>
+										<tr>
+											<td class="pl5">相对论</td>
+											<td class="pl5">物理</td>
+											<td class="pl5">张三</td>
+											<td class="pl5">16-06-22 10:20:22</td>
+											<td class="pl5">5</td>
+											<!-- 拓展 js -->
+											<td class="pl5">
+												<span class="ico_edit ml5" val="id_value"></span>
+												<span class="ico_del ml5" val="id_value"></span>
+											</td>
+										</tr>
+										<tr>
+											<td class="pl5">相对论</td>
+											<td class="pl5">物理</td>
+											<td class="pl5">张三</td>
+											<td class="pl5">16-06-22 10:20:22</td>
+											<td class="pl5">5</td>
+											<!-- 拓展 js -->
+											<td class="pl5">
+												<span class="ico_edit ml5" val="id_value"></span>
+												<span class="ico_del ml5" val="id_value"></span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+							<div class="btn_left">
+								<!-- <span class="btnL"><em class="btnR">删除</em></span> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="foot">
+			<a href="#">杰普科技有限公司</a>
+		</div>
+	</div>
+</body>
+</html>

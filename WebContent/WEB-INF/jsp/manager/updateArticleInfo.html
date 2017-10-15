@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>修改文章信息</title>
+<link rel="stylesheet" type="text/css" href="../theme/1/css/EditingArea.css">
+</head>
+<body>
+<div class="editingarea">
+	<div class="c_flex">
+		<span class="c_flexible"></span>
+	</div>
+	<div class="c_editview">
+		<div class="c_r_right_border">
+			<div class="website_base">
+				<form action="#" method="post">
+					<input type="hidden" name="article.id" value="1">
+					<input type="hidden" name="article.publisurDate" value="2016-06-22 10:20:22.0">
+					<input type="hidden" name="article.clickTimes" value="5">
+				<div class="c_condition website_condition dot_line">
+					<span class="yx_txt_center">修改信息</span>
+				</div>
+				<div class="divtable mt5">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0"
+						class="tab3">
+						<tbody>
+							<tr>
+								<td class="tr" width="80">标题：</td>
+								<td class="pl5"><input type="text" value="测试标题" name="article.title"></td>
+							</tr>
+							<tr>
+								<td class="tr" width="80">作者：</td>
+								<td class="pl5"><input type="text" value="测试作者" name="article.author"></td>
+							</tr>
+							<tr>
+								<td class="tr" width="80">所属栏目：</td>
+								<td class="pl5">
+									<select name="article.category.id">
+										<option value="">--请选择--</option>
+										<option value="1">历史</option>
+										<option value="2" selected>说说</option>
+										<option value="3">文化</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<textarea name="article.content" class="website_edit" cols="100">内存测试</textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btn_left btn_left_bcol">
+					<button class="btn_gray mr5 ml5">修改</button>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -2,18 +2,21 @@
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>首页</title>
-<link rel="stylesheet" type="text/css" href="../theme/1/css/common.css">
-<link rel="stylesheet" type="text/css" href="../theme/1/css/front/style.css">
-<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
-<script type="text/javascript" src="../theme/1/js/base.js"></script>
-<script type="text/javascript" src="../js/jquery.form.js"></script>
+<link rel="stylesheet" type="text/css" href="<%=basePath %>/theme/1/css/common.css">
+<link rel="stylesheet" type="text/css" href="<%=basePath %>/theme/1/css/front/style.css">
+<script type="text/javascript" src="<%=basePath %>/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="<%=basePath %>/js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="<%=basePath %>/theme/1/js/base.js"></script>
+<script type="text/javascript" src="<%=basePath %>/js/jquery.form.js"></script>
 <script type="text/javascript">
 	function refresh(){
 		window.location.reload();
@@ -63,7 +66,7 @@
     
     <div class="content">
     	<div class="banner">
-        	<div class="banimg"><img src="../theme/1/images/front/banner.png"></div>
+        	<div class="banimg"><img src="<%=basePath %>/theme/1/images/front/banner.png"></div>
         </div>
     	<div class="congw">
             
